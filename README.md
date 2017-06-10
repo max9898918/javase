@@ -1,2 +1,2 @@
 # javase
-存放一些javase学习资料
+java基础
