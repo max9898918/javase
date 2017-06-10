@@ -1,0 +1,88 @@
+package interview;
+/**
+ * 这个类主要是用来测试打印三角形的
+ * @author Administrator
+ *
+ */
+public class PrintTriangle {
+	/**
+	 * 输入行数打印上小下大的三角形
+	 * @param row
+	 */
+	public void printTriangle(int row){
+		//循环行打印
+		for(int rowIndex = 1; rowIndex<=row;rowIndex++){
+			//打印空格
+			for(int i = 0 ; i < row-rowIndex ;i++){
+				System.out.print(" ");
+			}
+			//打印*
+			for(int i = 0 ;i < rowIndex;i++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	/**
+	 * 打印实心三角形
+	 * 
+	 * @param line
+	 *            打印三角形行数
+	 */
+
+	static void triangleSolid(int line) {
+		for (int i = 1; i <= line; i++) {
+			// 控制打印空格
+			for (int j = 1; j <= line - i; j++) {
+				System.out.print(" ");
+			}
+			// 控制打印*
+			for (int k = 1; k <= 2 * i - 1; k++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+	/**
+	 * 打印空心三角形
+	 * 
+	 * @param line
+	 *            打印三角形行数
+	 */
+	static void triangleHollow(int line) {
+		// 控制打印行数
+		for (int i = 1; i <= line; i++) {
+			// 控制打印空格
+			for (int j = 1; j <= line - i; j++) {
+				System.out.print(" ");
+			}
+			// 控制打印*
+			for (int k = 1; k <= 2 * i - 1; k++) {
+				// 第一行,最后一行全部打印*
+				if (i == 1 || i == line) {
+					System.out.print("*");
+				} else {
+					// 第一个和最后一个打印*其余打印空格
+					if (k == 1 || k == 2 * i - 1) {
+						System.out.print("*");
+					} else {
+						System.out.print(" ");
+					}
+				}
+			}
+			System.out.println();
+		}
+
+	}
+	
+	public static void main(String[] args) {
+		PrintTriangle printTriangle = new PrintTriangle();
+		printTriangle.printTriangle(5);
+		
+		
+		
+		triangleSolid(5);// 打印实心三角形
+		triangleHollow(7);// 打印空心三角形
+	}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="src/library/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="src/library/jxl.jar"/>
+	<classpathentry kind="lib" path="src/library/poi-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="src/library/poi-examples-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="src/library/poi-excelant-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="src/library/poi-ooxml-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="src/library/poi-ooxml-schemas-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="src/library/poi-scratchpad-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="src/library/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="src/library/commons-io-2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
